@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Function 1 - hello world</title>
+</head>
+<body>
+  <script>
+    const newP = document.createElement("p");
+    let firstWord = 'hello';
+    let secondWord = 'world';
+
+    let greet = () => `${firstWord} ${secondWord}`;
+
+    newP.textContent  = greet();
+
+    document.body.append(newP);
+
+  </script>
+</body>
+</html>
