@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capitalization and Mutability</title>
+</head>
+<body>
+  <body>
+  <p>
+    Your coworker was supposed to write a simple helper function to capitalize a string (that contains a single word) before they went on vacation.<br/>
+    Unfortunately, they have now left and the code they gave you doesn't work.<br/>
+    Fix the helper function they wrote so that it works as intended (i.e. it must make the first character in the string upper case).<br/>
+    The string will always start with a letter and will never be empty.<br/>
+    
+    Examples:<br/>
+    "hello" --> "Hello"<br/>
+    "Hello" --> "Hello" (the first letter was already capitalized)<br/>
+    "a"     --> "A"<br/>
+  </p>
+  <script>
+    const newP = document.createElement("sapn");
+
+    let word = 'hello --->';
+    function capitalizeWord(word) {
+    let newWord = word[0].toUpperCase() + word.slice(1, word.length);
+    return newWord;
+}
+
+    newP.textContent  = capitalizeWord(word);
+    document.body.append(word);
+    document.body.append(newP);
+
+  </script>
+</body>
+</html>
