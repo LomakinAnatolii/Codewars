@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Century From Year
+</title>
+</head>
+<body>
+  <body>
+  <body>
+  <p>
+    Introduction<br/>
+    The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.<br/>
+
+    Task<br/>
+    Given a year, return the century it is in.<br/>
+
+    Examples<br/>
+    1705 --> 18<br/>
+    1900 --> 19<br/>
+    1601 --> 17<br/>
+    2000 --> 20<br/>
+    2742 --> 28<br/>
+  </p>
+  <script>
+    const newP = document.createElement("sapn");
+    const year = +prompt('Enter the year');
+
+    const  century = (year) => {
+      return Math.ceil(year / 100);
+    }
+
+    newP.textContent  = century(year);
+    document.body.append(newP);
+
+  </script>
+</body>
+</html>
+</body>
+</html>
